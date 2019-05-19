@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
 
-        replaceFragment(new RightFragment());
+        // replaceFragment(new RightFragment());
     }
 
     @Override
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.right_layout, fragment);
+        // transaction.replace(R.id.right_layout, fragment);
         // 将上一个fragment添加到back stack
-        transaction.addToBackStack(null);
+        // transaction.addToBackStack(null);
         transaction.commit();
     }
 }
